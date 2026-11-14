@@ -1,0 +1,26 @@
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "/absolute/path/to/a/folder/you/want/jojo/to/access"],
+      "disabled": true
+    },
+    "memory": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-memory"],
+      "disabled": true
+    },
+    "git": {
+      "command": "uvx",
+      "args": ["mcp-server-git", "--repository", "/absolute/path/to/a/git/repo"],
+      "disabled": true
+    },
+    "github": {
+      "type": "http",
+      "url": "https://api.githubcopilot.com/mcp/",
+      "headers": { "Authorization": "Bearer ${GITHUB_TOKEN}" },
+      "disabled": true
+    }
+  }
+}
+

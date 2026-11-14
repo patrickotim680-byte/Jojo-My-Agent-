@@ -1,0 +1,25 @@
+# Secrets — never commit
+.env
+.env.*
+!.env.example
+
+# Dependencies
+node_modules/
+
+# Runtime state / generated at runtime
+memory/*
+!memory/.gitkeep
+whatsapp_auth/
+sandbox/*.log
+
+# OS / editor cruft
+.DS_Store
+*.log
+
+
+# Added: local-only config/state referenced in docs
+mcp_servers.json
+plugins.json
+output/
+hosting/
+whatsapp_auth/

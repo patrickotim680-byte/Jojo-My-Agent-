@@ -1,0 +1,7 @@
+{
+  "name": "example-plugin",
+  "version": "1.0.0",
+  "description": "Reference plugin — shows the shape every Jojo plugin follows. Adds a system_info tool and a /sysinfo shortcut command. Safe to delete once you've copied the pattern into your own plugin.",
+  "main": "index.js"
+}
+

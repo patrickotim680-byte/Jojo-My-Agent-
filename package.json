@@ -1,0 +1,38 @@
+{
+  "name": "jojo",
+  "version": "1.0.0",
+  "description": "Autonomous AI agent powered by Google Gemini (via @google/genai)",
+  "type": "module",
+  "main": "src/index.js",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node --test scripts/*.test.js src/core/*.test.js src/tools/*.test.js",
+    "dev": "node --watch src/index.js",
+    "mcp-server": "node src/mcp-server.js",
+    "email-auth": "node scripts/gmail_auth_setup.js",
+    "email": "node scripts/email_channel.js",
+    "whatsapp": "node scripts/whatsapp_channel.js",
+    "voice": "node scripts/voice_channel.js"
+  },
+  "dependencies": {
+    "@google/genai": "^2.17.1",
+    "@hapi/boom": "^10.0.1",
+    "@heyputer/puter.js": "^2.5.3",
+    "@modelcontextprotocol/sdk": "^1.18.1",
+    "@whiskeysockets/baileys": "^7.0.0-rc14",
+    "axios": "^1.7.9",
+    "chalk": "^5.4.0",
+    "dotenv": "^16.4.7",
+    "googleapis": "^144.0.0",
+    "msedge-tts": "^2.0.7",
+    "playwright": "^1.48.0",
+    "qrcode-terminal": "^0.12.0"
+  },
+  "optionalDependencies": {
+    "@nut-tree-fork/nut-js": "^4.2.0",
+    "jimp": "^1.6.0"
+  }
+}
